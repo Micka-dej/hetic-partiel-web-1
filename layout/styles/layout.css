@@ -54,9 +54,10 @@
 }
 
 /* Page Intro --------------------------------------------------------------------------------------------------------------- */
-
+.bgded {
+	background: url("../../images/demo/backgrounds/bel_background.jpg");
+}
 #pageintro {
-  background-image: url('../images/demo/backgrounds/bel_background.jpg');
   padding: 180px 0;
 }
 
