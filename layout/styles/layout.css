@@ -38,7 +38,13 @@
 
 /* Header --------------------------------------------------------------------------------------------------------------- */
 
-#header {}
+#header {
+	    z-index: 3;
+      position: fixed;
+			width: 100%;
+			transition: all ease-out 0.5s;
+      -webkit-transition: all ease-out 0.5s;
+}
 
 #header #logo {
 	margin: 30px 0 0 0;
@@ -1327,4 +1333,3 @@ table a,
 		font-size: 1.6rem;
 	}
 }
-
