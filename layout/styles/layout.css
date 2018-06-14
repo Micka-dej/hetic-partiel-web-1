@@ -452,6 +452,19 @@ nav ol {
 	list-style: none;
 }
 
+#burgerMenu {
+display: none;
+position: absolute;
+top: 60px;
+right: 20px;
+}
+
+.burgerMenu_display {
+height: 1px;
+width: 100%;
+background: white;
+}
+
 #mainav,
 #breadcrumb,
 .sidebar nav {
@@ -1219,13 +1232,25 @@ table a,
 	}
 	#topbar {}
 	#header {
-		padding: 30px 0;
+		padding: 55px 0;
+		align-items: center;
 	}
+
+	#burgerMenu {
+		display: flex;
+		width: 40px;
+		height: 20px;
+		flex-direction: column;
+		justify-content: space-between;
+		cursor: pointer;
+	}
+
 	#header #logo {
 		margin-top: 3px;
 	}
 	#mainav {}
 	#mainav ul {
+		transition: 0.4s;
 		display: none;
 	}
 	#mainav form {
