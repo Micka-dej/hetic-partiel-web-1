@@ -22,7 +22,27 @@ var ListNav = document.querySelector('#mainav ul');
 BurgerMenu.addEventListener('click', function() {
 	if (ListNav.style.display === "none") {
 		ListNav.style.display = "block";
-	} else {
+	}
+  else {
 		ListNav.style.display = "none";
 	}
+});
+
+
+//Scrol to top button
+
+var Scrolltop = document.getElementById("backtotop")
+
+
+document.addEventListener('scroll', function(){
+    if( window.pageYOffset > 500 ){
+        Scrolltop.classList.add('visible');
+    }
+    else{
+        Scrolltop.classList.remove('visible');
+    }
+});
+
+Scrolltop.addEventListener('click', function(){
+    document.documentElement.scrollTop = document.body.scrollTop = 0;
 });
